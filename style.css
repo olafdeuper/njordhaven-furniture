@@ -1,0 +1,198 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Be Vietnam Pro";
+  font-size: 20px;
+}
+
+body {
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+main {
+  _width: 100%;
+}
+
+.navcontainer {
+  _border: 2px solid green;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navcontainer > div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-left: 1.5rem;
+  _border: 2px solid hotpink;
+}
+
+.navcontainer > div > p {
+  _border: 2px solid blue;
+  font-size: 0.8rem;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  width: auto;
+}
+
+.headingimage {
+  background-image: url(https://raw.githubusercontent.com/ferniemann/njordhaven/main/assets/couch.webp),
+    url(https://raw.githubusercontent.com/ferniemann/njordhaven/main/assets/sessel.webp);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 50% 100%, 50% 100%;
+  background-position: 0 0, 100% 0;
+  width: 100%;
+  border: 1px solid violet;
+  aspect-ratio: 2 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headingimage > h1 {
+  color: white;
+  _border: 1px solid green;
+  margin-top: 21%;
+  font-family: serif;
+  font-size: 2.6rem;
+  font-weight: 800;
+}
+
+.icon-chevron {
+  width: 1.6rem;
+  height: auto;
+  display: inline-block;
+  margin-bottom: 2%;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav > ul {
+  margin: 2rem 0 2rem 1rem;
+}
+
+nav > ul > li {
+  margin-right: 2rem;
+}
+
+.navlink {
+  color: black;
+  font-size: 0.8rem;
+  text-decoration: none;
+  position: relative;
+}
+
+.navlink::after {
+  /* Positioniert den leeren Content auf die Politionen von a */
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: -0.11rem;
+  /* border-bottom ersetzt Unterstrich */
+  border-bottom: 0.05rem solid gray;
+}
+
+.navlink:hover {
+  text-decoration: none;
+}
+
+.navlink:hover::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: -0.05rem;
+  border-bottom: 0.06rem solid black;
+}
+
+.productimage {
+  width: 50%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+#whitechair {
+  object-position: 50% 70%;
+}
+
+.infobox {
+  text-align: center;
+  display: inline-block;
+  padding: 6rem;
+}
+
+.infobox > h2 {
+  font-family: serif;
+}
+
+.infobox > p {
+  font-size: 0.8rem;
+  font-weight: 200;
+  line-height: 1.8;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.infobox > a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.6rem;
+}
+
+.itemcontainer {
+  display: flex;
+  align-items: center;
+}
+
+#logofooter {
+  filter: invert();
+  _margin-top: 3rem;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  padding: 3rem 0 2.5rem;
+}
+
+footer > p {
+  color: white;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+footer > ul > li {
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+footer > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.6rem;
+}
